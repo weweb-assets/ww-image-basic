@@ -151,6 +151,7 @@ export default {
 .ww-image-basic {
     & img {
         pointer-events: none;
+        user-select: none;
     }
 }
 /* wwEditor:end */
