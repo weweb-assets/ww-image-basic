@@ -146,5 +146,13 @@ export default {
         filter: var(--wwi-f);
     }
 }
+
+/* wwEditor:start */
+.ww-image-basic {
+    & img {
+        pointer-events: none;
+    }
+}
+/* wwEditor:end */
 </style>
 
