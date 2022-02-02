@@ -16,7 +16,6 @@ export default {
             label: { en: 'Image', fr: 'Image' },
             type: 'Image',
             bindable: true,
-            responsive: true,
             defaultValue: 'https://cdn.weweb.app/public/images/no_image_selected.png',
         },
         objectFit: {
