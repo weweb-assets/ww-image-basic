@@ -176,6 +176,7 @@ export default {
         aspect-ratio: var(--wwi-ar);
         object-fit: var(--wwi-of);
         filter: var(--wwi-f);
+        image-rendering: -webkit-optimize-contrast;
     }
 }
 
