@@ -156,6 +156,8 @@ export default {
 .ww-image-basic {
     position: relative;
     isolation: isolate;
+    overflow: hidden;
+    border-radius: inherit;
 
     &-overlay {
         z-index: 1;
@@ -189,4 +191,3 @@ export default {
 }
 /* wwEditor:end */
 </style>
-
