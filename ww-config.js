@@ -63,5 +63,11 @@ export default {
             },
             defaultValue: { en: '' },
         },
+        isCritical: {
+            section: 'settings',
+            label: { en: 'Is critical?' },
+            type: 'OnOff',
+            defaultValue: false,
+        },
     },
 };
