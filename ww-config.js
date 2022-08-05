@@ -63,5 +63,17 @@ export default {
             },
             defaultValue: { en: '' },
         },
+        loading: {
+            section: 'settings',
+            label: { en: 'Loading' },
+            type: 'TextSelect',
+            options: {
+                options: [
+                    { value: 'lazy', label: { en: 'Lazy' }, default: true },
+                    { value: 'eager', label: { en: 'Eager' } },
+                ],
+            },
+            defaultValue: 'lazy',
+        },
     },
 };
