@@ -1,13 +1,7 @@
 <template>
     <div class="ww-image-basic" ww-responsive="ww-image-basic" :style="style">
         <div class="ww-image-basic-overlay"></div>
-        <img
-            :src="src"
-            :srcset="srcset"
-            :sizes="sizes"
-            :alt="alt"
-            v-bind="content.isCritical ? {} : { loading: lazy }"
-        />
+        <img :src="src" :srcset="srcset" :sizes="sizes" :alt="alt" v-bind="{ loading: content.loading || 'lazy' }" />
     </div>
 </template>
 

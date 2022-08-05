@@ -63,11 +63,17 @@ export default {
             },
             defaultValue: { en: '' },
         },
-        isCritical: {
+        loading: {
             section: 'settings',
-            label: { en: 'Is critical?' },
-            type: 'OnOff',
-            defaultValue: false,
+            label: { en: 'Loading' },
+            type: 'TextSelect',
+            options: {
+                options: [
+                    { value: 'lazy', label: { en: 'Lazy' }, default: true },
+                    { value: 'eager', label: { en: 'Eager' } },
+                ],
+            },
+            defaultValue: 'lazy',
         },
     },
 };
