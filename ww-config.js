@@ -17,6 +17,12 @@ export default {
             type: 'Image',
             bindable: true,
             defaultValue: 'https://cdn.weweb.app/public/images/no_image_selected.png',
+            /* wwEditor:start */
+            bindingValidation: {
+                type: 'string',
+                tooltip: 'A string that represents the image url: `"https://.../.../my_image.png"`',
+            },
+            /* wwEditor:end */
         },
         objectFit: {
             label: {
@@ -44,6 +50,13 @@ export default {
             responsive: true,
             states: true,
             bindable: true,
+            /* wwEditor:start */
+            bindingValidation: {
+                cssSupports: 'color',
+                type: 'string',
+                tooltip: 'A string that represents a color code: `"rebeccapurple" | "#00ff00" | "rgb(214, 122, 127)"`',
+            },
+            /* wwEditor:end */
         },
         filter: {
             type: 'CssFilters',
@@ -51,6 +64,14 @@ export default {
             responsive: true,
             states: true,
             bindable: true,
+            /* wwEditor:start */
+            bindingValidation: {
+                cssSupports: 'filter',
+                type: 'string',
+                tooltip:
+                    'A string that represents a filter value: `"blur(5px)" | "contrast(200%)" | "hue-rotate(90deg)"` \n\n <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" target="_blank">[documentation]</a>',
+            },
+            /* wwEditor:end */
         },
         alt: {
             section: 'settings',
@@ -62,6 +83,12 @@ export default {
                 placeholder: 'Image description',
             },
             defaultValue: { en: '' },
+            /* wwEditor:start */
+            bindingValidation: {
+                type: 'string',
+                tooltip: 'A string that represents the image alt: `"image description"`',
+            },
+            /* wwEditor:end */
         },
         loading: {
             section: 'settings',
